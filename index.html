@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -15,61 +15,84 @@
      </div>
    </div>
 
-<div class="bottom-box">
-  <div class="box-left">
-    <form class="form-horizontal" action="">
-      <input type="email" class="form-control" id="email" placeholder="Email" name="email">    <!-- Email -->
+  <div class="bottom-box">
 
-      <input type="password" class="form-control" id="pwd" placeholder="Password" name="pwd">  <!-- Password -->
+    <div class="box-left">
 
-      <input type="checkbox" name="remember" id="checkbox_id" value="value" checked style="background-color: #3c6f5c" />
-
-      <label for="checkbox_id">Remember me</label>
-
-      <div class="forgottenpas"><a href=" ">Forgontten password?</a></div>
-
+    <form class="form login" action="">
+      <input type="email" id="email" placeholder="Email" name="email">                  <!-- Email -->
+      <input type="password" id="pwd" placeholder="Password" name="pwd">                <!-- Password -->
+      <input type="checkbox" name="remember" id="checkbox_id" value="value" checked />
+      <label for="checkbox_id"><strong>remember me</strong></label>
+      <div class="forgottenpas">
+        <a href=" ">Forgontten password?</a>
+      </div>
       <button type="submit" style="">LOGIN</button>
-
       <h6><a href>Don't have an account yet? Register here</a></h6>
     </form>
+
+                                                <!-- """"""""""""""Register Form"""""""""""""" -->
+
+    <form class="form register" action="">
+      <input type="text" id="charityName" placeholder="Charity Name *" name="email">    <!-- Charity Name -->
+
+      <input type="email" id="email" placeholder="Email *" name="email">                <!-- Email -->
+
+      <input type="text" id="charityNumber" placeholder="Charity Name *" name="email">  <!-- Charity Number -->
+
+      <p>* Mandatory field</p>
+
+      <button type="submit" style="">REGISTER</button>
+
+      <h6><a href>Already have an account? Login here.</a></h6>
+    </form>
+
+                                                <!-- """"""""""""""Success"""""""""""""" -->
+
+    <div class="success">
+      
+    </div>
+
   </div>
-  <div class="box-right">
-    <h4>Need further assistance?</h4>
-    <h6>If you need any further assistance, please <a href="">read our FAQ</a> or contact member of the team below</h6>
-      <ul>
-          <li>
-            <img src="http://charitablebookings.org/wp-content/uploads/2016/04/LichfieldPhoto-Francesca-di-Belmonte150x150.jpg" alt="" />
-            <p>Francesca di Belmorte</p>
-            <button type="button" name="button">
-              <a href="#" target="_blank">Email</a>
-            </button>
-          </li>
 
-          <li>
-            <img src="http://tm365.charitablebookings.com/wp-content/uploads/2017/08/laragh-150x150.png" alt="" />
-            <p>Francesca di Belmorte</p>
-            <button type="button" name="button">
-              <a href="#" target="_blank">Email</a>
-            </button>
-          </li>
+    <div class="box-right">
+      <h4>Need further assistance?</h4>
+      <h6>If you need any further assistance, please <a href="">read our FAQ</a> or contact member of the team below</h6>
+        <ul>
+            <li>
+              <img src="http://charitablebookings.org/wp-content/uploads/2016/04/LichfieldPhoto-Francesca-di-Belmonte150x150.jpg" alt="" />
+              <p>Francesca di Belmorte</p>
+              <button type="button" name="button">
+                <a href="#" target="_blank">Email</a>
+              </button>
+            </li>
 
-          <li>
-            <img src="http://charitablebookings.org/wp-content/uploads/2016/03/alon2.jpg" alt="" />
-            <p>Francesca di Belmorte</p>
-            <button type="button" name="button">
-              <a href="#" target="_blank">Email</a>
-            </button>
-          </li>
+            <li>
+              <img src="http://tm365.charitablebookings.com/wp-content/uploads/2017/08/laragh-150x150.png" alt="" />
+              <p>Francesca di Belmorte</p>
+              <button type="button" name="button">
+                <a href="#" target="_blank">Email</a>
+              </button>
+            </li>
 
-          <li>
-            <img src="http://tm365.charitablebookings.com/wp-content/uploads/2017/08/charlotte-150x150.png" alt="" />
-            <p>Francesca di Belmorte</p>
-            <button type="button" name="button">
-              <a href="#" target="_blank">Email</a>
-            </button>
-          </li>
-      </ul>
-  </div>
+            <li>
+              <img src="http://charitablebookings.org/wp-content/uploads/2016/03/alon2.jpg" alt="" />
+              <p>Francesca di Belmorte</p>
+              <button type="button" name="button">
+                <a href="#" target="_blank">Email</a>
+              </button>
+            </li>
+
+            <li>
+              <img src="http://tm365.charitablebookings.com/wp-content/uploads/2017/08/charlotte-150x150.png" alt="" />
+              <p>Francesca di Belmorte</p>
+              <button type="button" name="button">
+                <a href="#" target="_blank">Email</a>
+              </button>
+            </li>
+        </ul>
+    </div>
+
   </div>
 </body>
 </html>
