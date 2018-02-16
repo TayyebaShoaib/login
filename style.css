@@ -11,12 +11,23 @@ body {
   font-size: 16px;
   margin: 0;
 }
+.hide {
+  display: none;
+}
 button {
     outline: none;
     background-color: #d44f08;
     border: none;
     color: #fff;
     letter-spacing: 2px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  -webkit-box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.75);
 }
 .img{
     background:url("images/charitu-portal-background.jpg");
@@ -79,6 +90,8 @@ input[type="email"], input[type="password"], input[type="text"] {
 }
 input:focus {
   outline: none;
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
   box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
 }
 .forgottenpas {
@@ -96,13 +109,15 @@ input:focus {
 }
 form h6 {
   text-align: center;
-}
-form h6 a {
   color: #3c6f5c;
   font-size: 16px;
   font-style: italic;
   text-align: center;
+  cursor: pointer;
 }
+/* form h6 {
+
+} */
 
                                                 /* """"""""""""""Register Form"""""""""""""" */
 form.register p {
@@ -120,7 +135,7 @@ form.register p {
   letter-spacing: 1.3px;
   margin-bottom: 20px;
 }
-.box-right h6 {
+.box-right h5 {
     color: #5fa2a2;
     font-size: 16px;
     margin-top: 20px;
